@@ -8,11 +8,14 @@ error_reporting(E_ALL);
 echo date("H:i:s");
 
 // Connection to database "metagenomeCollection"
-$servername = "localhost";
-$username = "root";    
-$password = "password";
-$dbname = "metagenomeCollection";
-$db = new mysqli($servername, $username, $password, $dbname);
+$config = require __DIR__ . '/config/config.php';
+$db = new mysqli(
+    $config['servername'],
+    $config['username'],
+    $config['password'],
+    $config['dbname']
+);
+
 
 //managing errors
 if ($db->connect_error) {
