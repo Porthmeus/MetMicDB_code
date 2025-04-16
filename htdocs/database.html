@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>metmic DB</title>
+	</head>
+	<body> 
+		<h1>if you already know what you're looking for, you can try one of the popular searches:</h1>
+		<h2>Search anntotations for the individual sequences in a Cluster.</h2>
+		<form action="db.php" method="GET">
+			Search annotations for: <input type ="text" name="search_for_cluster" placeholder="Enter your search query, e.g. 'Cluster_00000001'" size = 50><br>
+			<input type ="submit"><br>
+		<h2>Find out, which bacteria are present in a certain sample.</h2>
+		<form action="db.php" method="GET">
+                        Search bacteria for:<input type ="text" name="search_for_bacteria" placeholder="Enter your search query, e.g. 'ERR2167525'" size = 50><br>
+			<input type ="submit"><br>
+		<h2>Get all the genomic sequences of bacteria for a certain host.</h2>
+		<form action="db.php" method="GET">
+                        Search sequences for:<input type ="text" name="search_for_sequences" placeholder="Enter your search query, e.g. 'Rattus norvegicus'" size = 50><br>  
+                        <input type ="submit"><br>
+		<h2/>Get all abundances for a certain host.</h2>
+		<form action="db.php" method="GET">
+                        Search abundances for:<input type ="text" name="search_for_abundance" placeholder="Enter your search query, e.g. 'Rattus norvegicus'" size = 50><br>  
+                        <input type ="submit"><br>
+		<h2>See metadata for a certain host.</h2>
+		<form action="db.php" method="GET">
+                        See metadata for:<input type ="text" name="search_for_metadata" placeholder="Enter your search query, e.g. 'Rattus norvegicus'" size = 50><br>  
+                        <input type ="submit"><br>
+
+
+
+
+		</form>
+	</body>
+</html>
+

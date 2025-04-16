@@ -1,0 +1,194 @@
+<html>
+	<link rel="stylesheet" href="cssstyles.css">
+        <title>MetMicDB - Domain</title>
+	<style>
+
+.box-container {
+	display: flex;
+}
+
+.box {
+	width: 700px;
+	height: 350px;
+	margin: 0 100px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 40;
+}
+
+.container {
+	margin: 40px;
+	position: relative;
+}
+
+.center {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+	font-size: 40px;
+}
+
+.offcenter {
+	position: relative;
+	top: 50%;
+	margin-left: 1250px;
+}
+
+.container_h2 {
+        margin-top: 80px;
+        position: relative;
+	font-size: 20px;
+}
+
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+	font-size: 60px;
+}
+
+.form {
+        width: 400px;
+        margin: auto;
+        margin-top: 250px;
+      }
+     .input {
+        padding: 4px 10px;
+        border: 1;
+	border-color: black;
+        font-size: 16px;
+      }
+      .search {
+        width: 75%;
+      }
+      .submit {
+        width: 70px;
+        background-color: #04aa6D;
+        color: white;
+      }
+
+      .content a {
+    display: block;
+    margin: 5px;
+    text-decoration: none;
+    color: #333;
+}
+
+.content a:hover {
+    color: #007bff;
+}
+.button {
+  position: relative;
+  margin-top: 15px;
+  margin-left: 80% !important;
+  display: inline-block;
+  background-color: #04aa6D;
+  padding: 5px;
+  width: 275px;
+  color: white !important;
+  text-align: center;
+  border: 4px double #04aa6D;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer; 
+  text-decoration: none;
+}
+
+.button:hover {
+    color: #007bff !important;
+    }
+</style>
+</head>
+</body>
+<div class="wrapper">
+         <nav class="navbar">
+    <ul>
+     <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="bac.html" class="active dropbtn">Bacteria &amp; Archaea</a>
+        <div class="dropdown-content">
+          <a href="bac.html">Domain</a>
+          <a href="menuphylum.php">Phylum</a>
+          <a href="menuclass.php">Class</a>
+          <a href="menuorder.php">Order</a>
+          <a href="menufamily.php">Family</a>
+          <a href="menugenus.php">Genus</a>
+          <a href="menuspecies.php">Species</a>
+      </div>
+    </li>
+    <li class="dropdown">
+    <a href="hosts.php">Hosts</a>
+<div class="dropdown-content">
+          <a href="hostdomain.php">Domain</a>
+          <a href="hostphylum.php">Phylum</a>
+          <a href="hostclass.php">Class</a>
+          <a href="hostorder.php">Order</a>
+          <a href="hostfamily.php">Family</a>
+          <a href="hostgenus.php">Genus</a>
+          <a href="hostspecies.php">Species</a>
+      </div>
+</li>
+
+  </ul>
+</nav>
+<a class="button" href="downloadbac.php">Download all taxonomy and stats as .csv file</a><br>
+<div class="content">
+	<div class="container">
+		<div class="offcenter">
+		<form action="db.php" method="GET">
+                                 <input type="text" name="search_for_taxonomy" placeholder="Enter your search query, e.g. 'Erysipelatoclostridium cocleatum'" size="50">
+                                <input type="submit" name="submit" class="submit" value="Search">
+		</form></div>
+	<br>
+	<div class="center">Bacteria &amp; Archaea</div>
+	</div>
+	<div class="container_h2"> </div>
+		<h2><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></h2>
+		<div class="box-container">
+			<div class="box">
+		<a href="species.php?value=Bacteria">Bacteria</a>
+		<br>
+			</div>
+		<div class="box">
+		<a href="species.php?value=Archaea">Archaea</a>
+
+		</div>
+		</div>
+		<br>
+		<p>
+
+ 		
+ 			 
+		</p></div>
+
+			<br>
+			<p></p>
+
+			<br> 
+          
+        </div>
+
+	<div class="image-wrapper">
+
+
+<a href="https://www.metaorganism-research.com/"><img src="METAORAGANISM-LOGO_RGB_schwarz_zeile_en.jpg" class="img"></a>
+</div>
+
+<div class="footer">
+        <ul>
+                        <li><a href="contact.html">Contact</a></li>
+			 <li><a href="legal.html">Legal Notice</a></li>
+                        <li><a href="https://www.uni-kiel.de/de/datenschutz">Privacy</a></li>
+
+        </ul>
+                </div>
+
+</body>
+</html>

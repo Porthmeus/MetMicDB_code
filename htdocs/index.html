@@ -1,0 +1,151 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="cssstyles.css">
+		<title>MetMicDB</title>
+		<style>
+			.wrapper {
+				display: flex;
+				flex-direction: column;
+				min-height: 100%;
+				position: relative;
+			}
+
+			.bgimg {
+				max-width: 100%;
+				height: auto;
+				opacity: 0.5;
+			}
+
+			.container {
+				position: relative;
+			}
+
+			.center {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				text-align: center;
+				transform: translate(-50%, -50%);
+				font-size: 70px;
+			}
+
+			.textcontainer {
+				position: relative;
+				margin: 20px;
+			}
+
+			.download-buttons {
+				display: flex;
+				justify-content: center; /* Center the buttons */
+				gap: 20px; /* Space between the buttons */
+				margin-top: 20px;
+			}
+
+			.download-buttons a {
+				background-color: #4CAF50; /* Green background */
+				color: white; /* White text */
+				padding: 10px 20px; /* Some padding */
+				text-align: center;
+				text-decoration: none; /* Remove underline */
+				display: inline-block;
+				font-size: 16px;
+				border-radius: 5px; /* Rounded corners */
+				cursor: pointer;
+			}
+
+			.download-buttons a:hover {
+				background-color: #45a049; /* Darker green on hover */
+			}
+
+			.footer ul {
+				list-style-type: none;
+				display: flex;
+				justify-content: center;
+				padding: 0;
+			}
+
+			.footer ul li {
+				margin: 0 10px;
+			}
+
+			.footer ul li a {
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<nav class="navbar">
+				<ul>
+					<li><a class="active" href="index.html">Home</a></li>
+					<li class="dropdown">
+						<a href="bac.html" class="dropbtn">Bacteria & Archaea</a>
+						<div class="dropdown-content">
+							<a href="bac.html">Domain</a>
+							<a href="menuphylum.php">Phylum</a>
+							<a href="menuclass.php">Class</a>
+							<a href="menuorder.php">Order</a>
+							<a href="menufamily.php">Family</a>
+							<a href="menugenus.php">Genus</a>
+							<a href="menuspecies.php">Species</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="hosts.php">Hosts</a>
+						<div class="dropdown-content">
+							<a href="hostdomain.php">Domain</a>
+							<a href="hostphylum.php">Phylum</a>
+							<a href="hostclass.php">Class</a>
+							<a href="hostorder.php">Order</a>
+							<a href="hostfamily.php">Family</a>
+							<a href="hostgenus.php">Genus</a>
+							<a href="hostspecies.php">Species</a>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<div class="content">
+				<div class="container">
+					<img src="BackgroundImage.png" class="bgimg">
+					<div class="center">Welcome to MetMicDB!</div>
+				</div>
+				<div class="textcontainer">
+					<h2>About this Database</h2>
+					<p>
+						The CRC 1182 initiative is dedicated to delving into the complex world of microbial communities within host organisms, known as metaorganisms. This website serves as a platform to establish an extensive database of metabolic models for distinct bacterial taxa associated with diverse host organisms. Leveraging advanced metagenomic sequencing and automated analytical pipelines, bacterial genomes undergo meticulous reconstruction, resulting in refined metabolic models. These models offer valuable insights into predicting metabolic interactions within microbial communities.
+					</p>
+					<br>
+					<p><b>This website offers:</b><br>
+						<pre style="font-family: Arial, sans serif"><ul>
+	<li>	Access to genome sequences for Metagenome-Assembled Genomes (MAGs).</li><br>
+	<li>	Abundance data showcasing the performance of each MAG across different samples.</li><br>
+	<li>	Metadata that correlates with each specific sample.</li>
+</ul>
+					</p>
+					</pre>
+					<p><b>Upcoming developments:</b><br>
+						Looking ahead, our plans are ambitious. We're gearing up to harness the power of predictive interventions, steering microbiomes in directions that enhance host outcomes. By utilizing community metabolic modeling approaches, we'll decipher the intricacies of competition and cooperation among bacteria based on their metabolic networks. This will unlock a deeper understanding of host-microbiome relationships and stability, spanning a wide array of host systems. This resource harmonizes genetic and metabolic perspectives, making it an invaluable asset for researchers studying the profound interactions between hosts and their microbiomes.
+					</p>
+					<br>
+
+					<!-- Download Buttons -->
+					<div class="download-buttons">
+						<a href="downloadbac.php" download>Download all taxonomy and stats</a>
+						<a href="download_all_metabun.php" download>Download all metadata and abundances</a>
+						<a href="download_all_sequences.php" download>Download all sequences</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="image-wrapper">
+			<a href="https://www.metaorganism-research.com/"><img src="METAORAGANISM-LOGO_RGB_schwarz_zeile_en.jpg" class="img"></a>
+		</div>
+		<div class="footer">
+			<ul>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="legal.html">Legal Notice</a></li>
+				<li><a href="https://www.uni-kiel.de/de/datenschutz">Privacy</a></li>
+			</ul>
+		</div>
+	</body>
+</html>

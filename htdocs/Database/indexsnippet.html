@@ -1,0 +1,89 @@
+<html>
+        <head>
+  <title>MetMicDB</title>
+  <style>
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+      position: relative;
+      z-index:1;
+    }
+
+    .navbar li {
+      float: left;
+    }
+
+    .navbar li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .navbar li a:hover:not(.dropdown-content .dropdown-item) {
+      background-color: #111;
+    }
+
+    .dropdown {
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 30 !important;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .navbar li:hover .dropdown {
+      opacity: 1;
+      pointer-events: auto;
+    }
+.dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .navbar li a.active {
+      background-color: #04aa6d;
+    }
+</style><body>
+         <div class="navbar">
+    <ul>
+      <li><a class="active" href="">Home</a></li>
+      <li class="dropdown">
+        <a href="" class="dropbtn">Bacteria & Archaea</a>
+        <div class="dropdown-content">
+          <a href="">Domain</a>
+          <a href="">Phylum</a>
+          <a href="">Class</a>
+
+          <a href="">Order</a>
+          <a href="">Family</a>
+          <a href="">Genus</a>
+          <a href="">Species</a>
+      </div>
+    </li>
+    <li><a href="">Hosts</a></li>
+    <li><a href="">Conditions</a></li>
+  </ul>
+</body>
+</html>
